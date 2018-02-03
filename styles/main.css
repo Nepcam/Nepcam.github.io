@@ -389,3 +389,42 @@ footer {
 	background-color: transparent;
 	font: 11px "Courier New", monospace;
 }
+.images {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+.wireframes {
+    margin-left: 16.66%;
+    margin-right: 16.66%;
+    text-align: center;
+}
+
+.image1 {
+    text-align: center;
+    padding: 10px;
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(270deg); /* IE 9 */
+        transform: rotate(270deg);
+}
+.image2 {
+    text-align: center;
+    padding: 10px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(180deg); /* IE 9 */
+            transform: rotate(180deg);
+}
+.image3 {
+    text-align: center;
+    padding: 10px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(180deg); /* IE 9 */
+            transform: rotate(180deg);
+}
+.image4 {
+    text-align: center;
+    padding:10px;
+    padding-bottom: 1%
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(180deg); /* IE 9 */
+            transform: rotate(180deg);
+}
