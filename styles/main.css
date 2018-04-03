@@ -1,194 +1,225 @@
-/* css Zen Garden default style v1.02 */
+/* css Zen Garden submission 153 - 'Moss', by Mani Sheriar, http://www.manisheriar.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+/* All associated graphics copyright 2005, Mani Sheriar */
+/* Added: Mar. 7th, 2005 */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
+/* IMPORTANT */
+/* This design is not a template. You may not reproduce it elsewhere without the 
+   designer's written permission. However, feel free to study the CSS and use 
+   techniques you learn from it elsewhere. */
 
 
-/* specific divs */
-.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
+
+/* CSS Document */
+
+* {
+	padding:0;
+	margin:0;
+	border:0;
 	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
+* html #content {
+	margin-bottom:-600px;
+	} /*IE */
+body {
+	background:#2B411B url(bg2.gif) repeat;
+	padding-bottom:600px;
 	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+abbr, abbr {
+	font-style:italic;
+	cursor:help;
 	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+a {
+	color:#A7D277;
+	text-decoration:underline;
+	}
+a:hover {
+	color:#28411C;
+	background-color:#8DBB5A;
+	text-decoration:none;
+	}
+.page-wrapper {
+	position:relative;
+	width:818px;
+	padding:125px 0 0 18px;
+	background:url(bg.jpg) repeat-y;
+	margin:0 0 -1200px 0;
+	}
+.intro, .supporting {
+	position:relative;
+	width:500px;
+	backgroun-color:#2B411B
 	}
 header {
-	padding-top: 20px;
-	height: 87px;
-}
-
+	position:absolute;
+	top:-125px;
+	left:-18px;
+	width:813px;
+	height:201px;
+	background:url(logo.jpg) no-repeat;
+	z-index:1;
+	}
+h1, h2, .preamble h3, .supporting .explanation h3, .supporting .participation h3, .supporting .benefits h3, .supporting .requirements h3, h3.select, h3.archives, h3.resources {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	}
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+	margin:0 0 50px 0;
 	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
+.summary p:first-child {
+	position:relative;
+	font:normal 15px/17px Georgia, "Times New Roman", Times, serif;
+	color:#C9E2AB;
+	z-index:2;
 	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
+.summary p:last-child {
+	position:absolute;
+	top:-100px;
+	left:568px;
+	width: 141px;
+	font:normal 13px/16px Georgia, "Times New Roman", Times, serif;
+	color:#C9E1AA;
+	z-index:3;
 	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
+.summary p:last-child a:hover {
+	color:#69913E;
+	background-color:#C9E1AA;
+	text-decoration:none;
 	}
-
-footer { 
-	text-align: center; 
+.preamble p, .supporting p {
+	font:normal 13px/16px Verdana, Arial, Helvetica, sans-serif;
+	color:#A3C979;
+	margin:12px 0;
 	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
+.preamble h3 {
+	width:227px;
+	height:36px;
+	background:url(enlightenment.gif) no-repeat;
+	margin:30px 0 -10px -2px;
 	}
-
+.explanation h3 {
+	width:233px;
+	height:36px;
+	background:url(about.gif) no-repeat;
+	margin:30px 0 -10px -2px;
+	}
+.preamble p:nth-child(4) {
+	margin:12px 0 0 0;
+	}
+.participation h3 {
+	width:114px;
+	height:36px;
+	background:url(participation.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
+.benefits h3 {
+	width:114px;
+	height:36px;
+	background:url(benefits.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
+.requirements h3 {
+	width:150px;
+	height:36px;
+	background:url(requirements.gif) no-repeat;
+	margin-top:30px;
+	margin-bottom:-10px;
+	}
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
+	position:absolute;
+	width:174px;
+	top: 100px;
+	left: 572px;
+	font:normal 10px/12px Verdana, Arial, Helvetica, sans-serif;
+	color:#69913E;
+	z-index:4;
 	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
+.sidebar .design-selection li {
+	margin-bottom:8px;
 	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+.sidebar a {
+	font:bold 12px/12px Georgia, "Times New Roman", Times, serif;
+	color:#E7F9D3;
+	display:block;
+	background-color:#B1D48A;
+	text-decoration:none;
+	margin:0 0 1px 0;
 	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+.sidebar a:hover {
+	color:#436023;
 	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+.sidebar .design-selection a.designer-name, .sidebar .design-archives a, .sidebar .zen-resources a {
+	font:normal 10px/12px Verdana, Arial, Helvetica, sans-serif;
+	color:#69913E;
+	display:inline;
+	text-decoration:underline;
 	}
-
-
+.sidebar .design-selection a.designer-name:hover, .sidebar .design-archives a:hover, .sidebar .zen-resources a:hover {
+	color:#C9E1AA;
+	background-color:#66992D;
+	text-decoration:none;
+	}
+.sidebar h3 {
+	margin:25px 0 0 0;
+	height:54px;
+	}
 .sidebar ul {
-	margin: 0;
-	padding: 0;
+	margin:-25px 0 0 20px;
+	list-style-type:none;
+	list-style-image:url(bullet.gif);
 	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
+.sidebar ul li {
+	margin:0 0 4px 0;
 	}
-.sidebar li a:link {
-	color: #988F5E;
+h3.select, h3.archives, h3.resources {
+	background-repeat:no-repeat;
 	}
-.sidebar li a:visited {
-	color: #B3AE94;
+h3.select {
+	background-image:url(design.gif);
+	width:124px;
 	}
-
-
+h3.archives {
+	background-image:url(archives.gif);
+	width:81px;
+	}
+h3.resources {
+	background-image:url(resources.gif);
+	width:84px;
+	}
+footer {
+	position:relative;
+	left:-18px;
+	background:url(footer.jpg) no-repeat bottom left;
+	width:615px;
+	height:47px;
+	padding:60px 220px 0 0;
+	text-align:center;
+	}
+footer a {
+	color:#C9E1AA;
+	}
+footer a:hover {
+	color:#69913E;
+	background-color:#C9E1AA;
+	}
 .extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
+	position:relative;
+	top:600px;
+	left:561px;
+	height:600px;
+	width:454px;
+	background:url(tree.jpg) no-repeat bottom left;
+	z-index:5;
+	}
+.extra2 {
+	position:relative;
+	top:0;
+	left:561px;
+	height:600px;
+	width:454px;
+	background:url(treeBg.gif) no-repeat bottom left;
+	margin-bottom:-600px;
+	z-index:6;
 	}
