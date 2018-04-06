@@ -139,7 +139,7 @@ header h2 {
 	display: none;
 }	
 
-footer { 
+.footer { 
 	position: relative;
 	top: 20px;
 	left: 100px;
